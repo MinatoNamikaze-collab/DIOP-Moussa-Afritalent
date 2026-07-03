@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AfriTalent — Plans et tarification pour freelances et entreprises" />
+  <title>Tarifs — AfriTalent</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="navbar navbar-expand-lg" aria-label="Navigation principale">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Afri<span>Talent</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+              aria-controls="navMenu" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+          <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+          <button id="theme-toggle" aria-label="Changer le thème"><i class="bi bi-sun-fill"></i></button>
+          <a href="contact.html" class="nav-link btn-cta-nav">Rejoindre AfriTalent</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container text-center">
+        <p class="section-eyebrow fade-in">Tarification</p>
+        <h1 class="section-title fade-in">Des plans pour tous les profils</h1>
+        <p class="section-subtitle mx-auto fade-in">Commencez gratuitement, évoluez selon vos besoins.</p>
+      </div>
+    </section>
+
+    <!-- PLANS TARIFAIRES -->
+    <section class="section-padding" aria-labelledby="pricing-title">
+      <div class="container">
+        <h2 id="pricing-title" class="visually-hidden">Plans tarifaires</h2>
+        <div class="row g-4 align-items-stretch">
+
+          <!-- Plan Gratuit -->
+          <div class="col-lg-4 fade-in">
+            <article class="pricing-card h-100">
+              <p class="pricing-plan-name">Gratuit</p>
+              <div class="price-display"><sup>0</sup> FCFA<sub>/mois</sub></div>
+              <p style="color:var(--color-text-muted); font-size:0.85rem;">Idéal pour démarrer</p>
+              <hr class="pricing-divider" />
+              <ul class="feature-list">
+                <li><i class="bi bi-check-lg icon-check" aria-hidden="true"></i>Profil public visible</li>
+                <li><i class="bi bi-check-lg icon-check" aria-hidden="true"></i>Jusqu'à 3 candidatures/mois</li>
+                <li><i class="bi bi-check-lg icon-check" aria-hidden="true"></i>Messagerie de base</li>
+                <li><i class="bi bi-x-lg icon-cross" aria-hidden="true"></i>Badge "Vérifié"</li>
+                <li><i class="bi bi-x-lg icon-cross" aria-hidden="true"></i>Mise en avant dans les résultats</li>
+                <li><i class="bi bi-x-lg icon-cross" aria-hidden="true"></i>Support prioritaire</li>
+                <li><i class="bi bi-x-lg icon-cross" aria-hidden="true"></i>Statistiques de profil</li>
+              </ul>
+              <button class="btn-pricing btn-pricing-outline">Commencer gratuitement</button>
+            </article>
+          </div>
+
+          <!-- Plan Pro — populaire -->
+          <div class="col-lg-4 fade-in">
+            <article class="pricing-card popular h-100">
+              <span class="popular-badge">⭐ Populaire</span>
+              <p class="pricing-plan-name" style="color:var(--color-primary);">Pro</p>
+              <div class="price-display"><sup>9 900</sup> FCFA<sub>/mois</sub></div>
+              <p style="color:var(--color-text-muted); font-size:0.85rem;">Pour les freelances actifs</p>
+              <hr class="pricing-divider" />
+              <ul class="feature-list">
+                <li><i class="bi bi-check-lg icon-check" aria-hidden="true"></i>Profil optimisé & mis en avant</li>
+                <li><i class="bi bi-check-lg icon-check" aria-hidden="true"></i>Candidatures illimitées</li>
+                <li><i class="bi bi-check-lg icon-check" aria-hidden="true"></i>Messagerie avancée</li>
+                <li><i class="bi bi-check-lg icon-check" aria-hidden="true"></i>Badge "Vérifié Pro"</li>
+                <li><i class="bi bi-check-lg icon-check" aria-hidden="true"></i>Priorité dans les résultats</li>
+                <li><i class="bi bi-check-lg icon-check" aria-hidden="true"></i>Support 24h prioritaire</li>
+                <li><i class="bi bi-x-lg icon-cross" aria-hidden="true"></i>Statistiques avancées</li>
+              </ul>
+              <button class="btn-pricing btn-pricing-primary">Passer au Pro</button>
+            </article>
+          </div>
+
+          <!-- Plan Entreprise -->
+          <div class="col-lg-4 fade-in">
+            <article class="pricing-card h-100">
+              <p class="pricing-plan-name">Entreprise</p>
+              <div class="price-display"><sup>49 000</sup> FCFA<sub>/mois</sub></div>
+              <p style="color:var(--color-text-muted); font-size:0.85rem;">Pour les équipes et RH</p>
+              <hr class="pricing-divider" />
+              <ul class="feature-list">
+                <li><i class="bi bi-check-lg icon-check" aria-hidden="true"></i>Tout le plan Pro</li>
+                <li><i class="bi bi-check-lg icon-check" aria-hidden="true"></i>Jusqu'à 20 utilisateurs</li>
+                <li><i class="bi bi-check-lg icon-check" aria-hidden="true"></i>Publication de missions illimitées</li>
+                <li><i class="bi bi-check-lg icon-check" aria-hidden="true"></i>Dashboard RH dédié</li>
+                <li><i class="bi bi-check-lg icon-check" aria-hidden="true"></i>Statistiques avancées</li>
+                <li><i class="bi bi-check-lg icon-check" aria-hidden="true"></i>Account manager dédié</li>
+                <li><i class="bi bi-check-lg icon-check" aria-hidden="true"></i>Contrats & facturation auto</li>
+              </ul>
+              <button class="btn-pricing btn-pricing-outline">Contacter les ventes</button>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ ACCORDION -->
+    <section class="section-padding" style="padding-top:0" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="row mb-4 fade-in">
+          <div class="col-lg-7">
+            <p class="section-eyebrow">FAQ</p>
+            <h2 class="section-title" id="faq-title">Questions fréquentes</h2>
+          </div>
+        </div>
+
+        <div class="accordion fade-in" id="faqAccordion">
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#faq1"
+                      aria-expanded="true" aria-controls="faq1">
+                Comment fonctionne le paiement sur AfriTalent ?
+              </button>
+            </h3>
+            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Le paiement est sécurisé via notre système AfriPay. Le client dépose les fonds en escrow avant le démarrage de la mission. L'argent n'est libéré au freelance qu'après validation des livrables par le client, garantissant la sécurité des deux parties.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#faq2"
+                      aria-expanded="false" aria-controls="faq2">
+                Puis-je changer de plan à tout moment ?
+              </button>
+            </h3>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Oui, vous pouvez passer à un plan supérieur ou inférieur à tout moment depuis votre tableau de bord. Le changement prend effet immédiatement pour les upgrades et à la fin de la période de facturation pour les downgrades.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#faq3"
+                      aria-expanded="false" aria-controls="faq3">
+                AfriTalent prend-il une commission sur les missions ?
+              </button>
+            </h3>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Une commission de 8% est prélevée sur chaque mission réalisée (plan Gratuit et Pro). Les clients du plan Entreprise bénéficient d'une commission réduite à 4%. Les détails sont toujours visibles avant confirmation d'une mission.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#faq4"
+                      aria-expanded="false" aria-controls="faq4">
+                Comment les freelances sont-ils vérifiés ?
+              </button>
+            </h3>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                Chaque freelance passe par un processus de vérification d'identité, de validation de ses compétences via des tests techniques, et d'examen de son portfolio. Le badge "Vérifié" est attribué uniquement après validation complète par notre équipe.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#faq5"
+                      aria-expanded="false" aria-controls="faq5">
+                Quels moyens de paiement sont acceptés ?
+              </button>
+            </h3>
+            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                AfriTalent accepte Orange Money, Wave, MTN Mobile Money, Visa/Mastercard, et virements bancaires SEPA. D'autres méthodes spécifiques à chaque pays africain sont en cours d'intégration pour couvrir l'ensemble du continent.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <p class="footer-logo">Afri<span>Talent</span></p>
+          <p class="footer-desc">La plateforme de référence pour les freelances tech africains.</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon" aria-label="LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+            <a href="#" class="social-icon" aria-label="Twitter"><i class="bi bi-twitter-x" aria-hidden="true"></i></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h3 class="footer-heading">Liens utiles</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="freelances.html">Freelances</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a href="about.html">À propos</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h3 class="footer-heading">Ressources</h3>
+          <ul class="footer-links">
+            <li><a href="#">Blog Tech</a></li>
+            <li><a href="#">Guide freelance</a></li>
+            <li><a href="#">Confidentialité</a></li>
+            <li><a href="#">CGU</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h3 class="footer-heading">Contact</h3>
+          <ul class="footer-links">
+            <li><i class="bi bi-envelope-fill me-2" aria-hidden="true"></i>bonjour@afritalent.io</li>
+            <li><i class="bi bi-telephone-fill me-2" aria-hidden="true"></i>+221 33 800 00 00</li>
+            <li><i class="bi bi-geo-alt-fill me-2" aria-hidden="true"></i>Dakar, Sénégal</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="footer-divider" />
+      <div class="footer-bottom d-flex justify-content-between flex-wrap gap-2">
+        <p>© <span class="current-year"></span> AfriTalent. Tous droits réservés.</p>
+        <p>Fait avec ❤️ pour le talent africain</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Retour en haut"><i class="bi bi-arrow-up" aria-hidden="true"></i></button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
