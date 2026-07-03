@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AfriTalent — Contactez notre équipe" />
+  <title>Contact — AfriTalent</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar" class="navbar navbar-expand-lg" aria-label="Navigation principale">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Afri<span>Talent</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+              aria-controls="navMenu" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav mx-auto gap-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="freelances.html">Freelances</a></li>
+          <li class="nav-item"><a class="nav-link" href="tarifs.html">Tarifs</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+          <button id="theme-toggle" aria-label="Changer le thème"><i class="bi bi-sun-fill"></i></button>
+          <a href="contact.html" class="nav-link btn-cta-nav">Rejoindre AfriTalent</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container text-center">
+        <p class="section-eyebrow fade-in">Contact</p>
+        <h1 class="section-title fade-in">Parlons de votre projet</h1>
+        <p class="section-subtitle mx-auto fade-in">Notre équipe vous répond sous 24 heures.</p>
+      </div>
+    </section>
+
+    <!-- FORMULAIRE + INFOS -->
+    <section class="section-padding" aria-labelledby="contact-section-title">
+      <div class="container">
+        <h2 id="contact-section-title" class="visually-hidden">Formulaire de contact</h2>
+        <div class="row g-5">
+
+          <!-- Formulaire -->
+          <div class="col-lg-7 fade-in">
+            <div class="contact-form-wrap">
+
+              <!-- Message succès (caché par défaut) -->
+              <div id="success-message" class="success-message" role="alert" aria-live="polite">
+                <div style="font-size:2.5rem; margin-bottom:0.5rem;" aria-hidden="true">✅</div>
+                <h5>Message envoyé !</h5>
+                <p style="color:var(--color-text-muted); font-size:0.9rem;">
+                  Merci pour votre message. Notre équipe vous contactera sous 24 heures.
+                </p>
+              </div>
+
+              <!-- Formulaire -->
+              <form id="contact-form" novalidate aria-label="Formulaire de contact AfriTalent">
+
+                <div class="row g-3">
+                  <!-- Nom -->
+                  <div class="col-md-6">
+                    <label for="nom" class="form-label">Nom <span aria-hidden="true" style="color:#e74c3c;">*</span></label>
+                    <input type="text" id="nom" class="form-control" placeholder="Diallo" autocomplete="family-name" required aria-required="true" aria-describedby="nom-error" />
+                    <span id="nom-error" class="invalid-feedback" role="alert"></span>
+                  </div>
+                  <!-- Prénom -->
+                  <div class="col-md-6">
+                    <label for="prenom" class="form-label">Prénom <span aria-hidden="true" style="color:#e74c3c;">*</span></label>
+                    <input type="text" id="prenom" class="form-control" placeholder="Aliou" autocomplete="given-name" required aria-required="true" aria-describedby="prenom-error" />
+                    <span id="prenom-error" class="invalid-feedback" role="alert"></span>
+                  </div>
+                  <!-- Email -->
+                  <div class="col-12">
+                    <label for="email" class="form-label">Email <span aria-hidden="true" style="color:#e74c3c;">*</span></label>
+                    <input type="email" id="email" class="form-control" placeholder="aliou@exemple.com" autocomplete="email" required aria-required="true" aria-describedby="email-error" />
+                    <span id="email-error" class="invalid-feedback" role="alert"></span>
+                  </div>
+                  <!-- Sujet -->
+                  <div class="col-12">
+                    <label for="sujet" class="form-label">Sujet <span aria-hidden="true" style="color:#e74c3c;">*</span></label>
+                    <select id="sujet" class="form-select" required aria-required="true" aria-describedby="sujet-error">
+                      <option value="">-- Choisissez un sujet --</option>
+                      <option value="freelance">Je veux m'inscrire comme freelance</option>
+                      <option value="entreprise">Je cherche un freelance pour mon projet</option>
+                      <option value="partenariat">Proposition de partenariat</option>
+                      <option value="support">Support technique</option>
+                      <option value="autre">Autre demande</option>
+                    </select>
+                    <span id="sujet-error" class="invalid-feedback" role="alert"></span>
+                  </div>
+                  <!-- Message -->
+                  <div class="col-12">
+                    <label for="message" class="form-label">Message <span aria-hidden="true" style="color:#e74c3c;">*</span></label>
+                    <textarea id="message" class="form-control" rows="5"
+                              placeholder="Décrivez votre projet ou votre demande (20 caractères minimum)..."
+                              required aria-required="true" aria-describedby="message-error message-hint"></textarea>
+                    <span id="message-hint" style="font-size:0.78rem; color:var(--color-text-muted);">Minimum 20 caractères.</span>
+                    <span id="message-error" class="invalid-feedback" role="alert"></span>
+                  </div>
+                  <!-- Bouton submit -->
+                  <div class="col-12">
+                    <button type="submit" class="btn-primary-main w-100 justify-content-center">
+                      <i class="bi bi-send-fill" aria-hidden="true"></i>
+                      Envoyer le message
+                    </button>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+          </div>
+
+          <!-- Infos de contact -->
+          <div class="col-lg-5 fade-in">
+
+            <div class="contact-info-card mb-3">
+              <h3 style="font-family:var(--font-display); font-weight:700; font-size:1.1rem; color:var(--color-text); margin-bottom:1.25rem;">
+                Nos coordonnées
+              </h3>
+              <div class="contact-info-item">
+                <div class="contact-icon" aria-hidden="true"><i class="bi bi-envelope-fill"></i></div>
+                <div class="contact-info-text">
+                  <strong>Email</strong>
+                  <span>bonjour@afritalent.io</span>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-icon" aria-hidden="true"><i class="bi bi-telephone-fill"></i></div>
+                <div class="contact-info-text">
+                  <strong>Téléphone</strong>
+                  <span>+221 33 800 00 00</span>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-icon" aria-hidden="true"><i class="bi bi-geo-alt-fill"></i></div>
+                <div class="contact-info-text">
+                  <strong>Adresse</strong>
+                  <span>12, Avenue Cheikh Anta Diop, Dakar, Sénégal</span>
+                </div>
+              </div>
+              <div class="contact-info-item" style="margin-bottom:0;">
+                <div class="contact-icon" aria-hidden="true"><i class="bi bi-clock-fill"></i></div>
+                <div class="contact-info-text">
+                  <strong>Horaires</strong>
+                  <span>Lun – Ven : 08h00 – 18h00 (GMT)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Carte Google Maps -->
+            <div class="map-container" role="region" aria-label="Carte de localisation AfriTalent">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.7!2d-17.4677!3d14.7167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec10d7919a47!2sDakar%2C%20S%C3%A9n%C3%A9gal!5e0!3m2!1sfr!2ssn!4v1700000000000"
+                height="220"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Localisation d'AfriTalent à Dakar, Sénégal">
+              </iframe>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <p class="footer-logo">Afri<span>Talent</span></p>
+          <p class="footer-desc">La plateforme de référence pour les freelances tech africains.</p>
+          <div class="social-icons">
+            <a href="#" class="social-icon" aria-label="LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+            <a href="#" class="social-icon" aria-label="Twitter"><i class="bi bi-twitter-x" aria-hidden="true"></i></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h3 class="footer-heading">Liens utiles</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="freelances.html">Freelances</a></li>
+            <li><a href="tarifs.html">Tarifs</a></li>
+            <li><a href="about.html">À propos</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h3 class="footer-heading">Ressources</h3>
+          <ul class="footer-links">
+            <li><a href="#">Blog Tech</a></li>
+            <li><a href="#">Guide freelance</a></li>
+            <li><a href="#">Confidentialité</a></li>
+            <li><a href="#">CGU</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h3 class="footer-heading">Contact</h3>
+          <ul class="footer-links">
+            <li><i class="bi bi-envelope-fill me-2" aria-hidden="true"></i>bonjour@afritalent.io</li>
+            <li><i class="bi bi-telephone-fill me-2" aria-hidden="true"></i>+221 33 800 00 00</li>
+            <li><i class="bi bi-geo-alt-fill me-2" aria-hidden="true"></i>Dakar, Sénégal</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="footer-divider" />
+      <div class="footer-bottom d-flex justify-content-between flex-wrap gap-2">
+        <p>© <span class="current-year"></span> AfriTalent. Tous droits réservés.</p>
+        <p>Fait avec ❤️ pour le talent africain</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Retour en haut"><i class="bi bi-arrow-up" aria-hidden="true"></i></button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
+
